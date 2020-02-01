@@ -4,7 +4,7 @@ pipeline {
         stage('pull') {
             steps {
              sh 'pwd'
-             sh 'git clone http://sdubey195:sdubey123!@bitbucket.org/sdubey195/jenkinstest.git'
+             sh 'git clone http://sdubey472:sdubey123!@github.com/sdubey472/test.git'
             }
         }
         stage('build') {
