@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-             dir('myNewProject'){
               sh "$PWD"
-             }
             }
         }
         stage('build') {
