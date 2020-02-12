@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-              sh "PWD"
+             sh 'pwd'
+             sh 'rm -rf test'
+             sh 'git clone http://sdubey472:sdubey123!@github.com/sdubey472/test.git'
             }
         }
         stage('build') {
@@ -23,8 +25,7 @@ pipeline {
             steps {
                 echo 'Publish on PlayStore'
             }
-        }       
-        
+        }        
         stage('publish on Apple Store') {
             steps {
                 echo 'Publish on Apple Store'
