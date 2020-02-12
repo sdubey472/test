@@ -7,11 +7,11 @@ pipeline {
              sh 'rm -rf test'
              sh 'git clone http://sdubey472:sdubey123!@github.com/sdubey472/test.git'
              sh "$PWD"
-             sh "echo hi...."
+             echo 'Hi..'
              dir('myNewProject'){
               sh "$PWD"
              }
-             sh "echo  hello......."
+             echo  "hello......."
             
             }
         }
