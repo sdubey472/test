@@ -32,7 +32,8 @@ pipeline {
             steps {
                 echo 'Publish on PlayStore'
             }
-        }        
+        }       
+        
         stage('publish on Apple Store') {
             steps {
                 echo 'Publish on Apple Store'
