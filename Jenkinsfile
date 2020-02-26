@@ -9,6 +9,7 @@ pipeline {
              sh 'git clone http://sdubey472:sdubey123!@github.com/sdubey472/test.git'
              dir ('test') {
                 sh 'whoami'
+                sh 'sdkmanager'
                 sh 'ionic'
                 sh 'whoami' 
                 sh 'ls -la'
