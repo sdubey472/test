@@ -10,7 +10,7 @@ pipeline {
              dir ('test') {
                 sh 'whoami'
                 sh 'sdkmanager'
-                sh 'ionic'
+                sh 'ng'
                 sh 'whoami' 
                 sh 'ls -la'
              }
@@ -34,7 +34,7 @@ pipeline {
                 echo 'Publish on PlayStore'
             }
         }        
-        stage('publish on Apple Store') {
+        stage('publish on IOS Store') {
             steps {
                 echo 'Publish on Apple Store'
             }
