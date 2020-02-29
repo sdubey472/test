@@ -10,7 +10,7 @@ pipeline {
              dir ('test') {
                 sh 'whoami'
                 sh 'sdkmanager'
-                sh 'ng'
+                sh 'npm run ng '
                 sh 'whoami' 
                 sh 'ls -la'
              }
