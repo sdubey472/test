@@ -3,7 +3,15 @@ pipeline {
         environment {
             ANDROID_HOME=/home/ubuntu/android-sdk-linux
             export ANDROID_HOME
-            export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:/usr/local/bin:/usr/bin:/bin
+            export PATH=${PATH}:\
+            $ANDROID_HOME/tools:\
+            $ANDROID_HOME/platform-tools:\
+            $ANDROID_HOME/tools/bin:\
+            '/usr/local/bin':\
+            '/usr/bin':\
+            '/bin'
+
+
         }
     stages {
         stage('pull') {
