@@ -2,7 +2,7 @@ pipeline {
     agent any
         environment {
             ANDROID_HOME='/home/ubuntu/android-sdk-linux'
-            PATH=${PATH}
+            PATH='${PATH}'
         }
     stages {
         stage('pull') {
