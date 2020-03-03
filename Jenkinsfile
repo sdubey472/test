@@ -1,5 +1,8 @@
 pipeline {
     agent any
+        environment {
+            PATH='/usr/local/bin:/usr/bin:/bin'
+        }
     stages {
         stage('pull') {
             steps {
@@ -10,7 +13,7 @@ pipeline {
              dir ('test') {
                 sh 'whoami'
                 sh 'sdkmanager'
-                sh 'npm run ng '
+                sh 'npm run ng'
                 sh 'whoami' 
                 sh 'ls -la'
              }
