@@ -1,10 +1,15 @@
 pipeline {
     agent any
         environment {
-            PATH='/usr/local/bin:/usr/bin:/bin'
+            ANDROID_HOME=/home/ubuntu/android-sdk-linux
+            export ANDROID_HOME
+            export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin /usr/local/bin:/usr/bin:/bin
         }
     stages {
         stage('pull') {
+            when {
+                branch 'master'
+            }
             steps {
              sh 'pwd'
              sh 'rm -rf test'
