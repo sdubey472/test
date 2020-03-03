@@ -6,9 +6,6 @@ pipeline {
         }
     stages {
         stage('pull') {
-            when {
-                branch 'master'
-            }
             steps {
              sh 'pwd'
              sh 'rm -rf test'
