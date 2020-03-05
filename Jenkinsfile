@@ -12,8 +12,8 @@ pipeline {
              sh 'whoami'
             //  sh 'git clone http://sdubey472:sdubey123!@github.com/sdubey472/test.git'
             sh 'whoami'
-            sh 'sdkmanager'
-            sh 'npm run ng'
+            // sh 'sdkmanager'
+            sh 'npm -v'
             sh 'whoami' 
             sh 'ionic'
             }
